@@ -19,7 +19,10 @@ To host all JavaScript locally, see:
 * Remark's [Offline use without an internet connection](https://github.com/gnab/remark/wiki#offline-use-without-an-internet-connection)
 * [Hosting your own copy of the MathJax Components](https://github.com/mathjax/MathJax?files=1#hosting-your-own-copy-of-the-mathjax-components)
 
-Licensing:
+## Copyright and licencing
 
-* remark is relased under the MIT License.
-* MathJax is released under the Apache License 2.0.
+remark is relased under the MIT License.
+
+MathJax is released under the Apache License 2.0.
+
+The repository contents are Copyright 2020 The University of Edinburgh and are released under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
