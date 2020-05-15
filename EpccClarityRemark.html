@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EPCC Clarity Remark</title>
+    <meta charset="utf-8">
+    <style>
+      /* Styles match epcc_clarity.thmx where possible. */
+      body { 
+        font-family: "Arial";
+        color: #292934;
+      }
+      p, li, th, td { 
+        font-family: "Arial";
+        font-size: 20pt;
+        line-height: 1.2;
+      }
+      h1, h2, h3 {
+        font-family: "Arial";
+        font-weight: normal;
+        color: #A53926;
+      }
+      .remark-code {
+        font-family: 'Courier';
+        font-weight: bold;
+        font-size: 14pt;
+      }
+      .remark-inline-code {
+        font-family: 'Courier';
+        font-weight: bold;
+        font-size: 16pt;
+      }
+      /* Collapse table cell borders so cells share borders. */
+      table {
+        border-collapse: collapse;
+      }
+      th, td {
+        padding: 5px;
+        border: 1px solid;
+      }
+      /*
+       * From Two-column formatting? #236
+       * https://github.com/gnab/remark/issues/236 
+       */
+      .columns {
+        display: flex;
+      }
+      .col {
+        width: 50%;
+        padding: 0 1%;
+        box-sizing: border-box;
+      }
+      .col3 {
+        width: 33%;
+        padding: 0 1%;
+        box-sizing: border-box;
+      }
+      /*
+       * From Center slide numbering in xaringan
+       * https://community.rstudio.com/t/center-slide-numbering-in-xaringan/24463/2
+       */
+      .remark-slide-number {
+        right: 50%
+      }
+      /*
+       * From Easy way to add footer / disable slide numbering #34
+       * https://github.com/yihui/xaringan/issues/34
+       */
+      .footer {
+        position: fixed;
+        top: 85%;
+        left: 0;
+        width: 100%;
+      }
+      .logo_columns {
+        display: flex;
+        align-items: center;
+      }
+      .epcc-logo img {
+        height: 40pt;
+        float: left;
+        vertical-align: bottom;
+      }
+      .uoe-logo img {
+        height: 50pt;
+        float: right;
+        vertical-align: bottom;
+      }
+      .cc-by-logo img {
+        height: 75pt;
+        float: center;
+      }
+      /*
+       * From Slide number removal
+       * https://github.com/yihui/xaringan/wiki/Slide-number-removal
+       */
+      .title-slide .remark-slide-number {
+        display: none;
+      }
+      .title-slide h1
+      {
+        font-size: 54pt;
+      }
+      .title-slide hr
+      {
+        border-color: #D2533C;
+      }
+      .title-slide p
+      {
+        font-size: 24pt;
+        color: #57576E;
+      }
+      .slide-reuse p {
+        font-size: 15pt;
+      }
+      .slide-references p {
+        font-size: 14pt;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+layout: true
+
+.footer[
+.logo_columns[
+.col[
+.epcc-logo[![EPCC logo](./img/epcc_logo.png)]
+]
+.col[
+.uoe-logo[![The University of Edinburgh logo](./img/uoe_logo.png)]
+]
+]
+]
+
+---
+
+class: title-slide
+
+# EPCC Clarity Remark
+
+<hr/>
+
+Staff
+
+EPCC, The University of Edinburgh
+
+???
+
+Welcome to this EPCC Clarity Remark presentation.
+
+---
+
+## Reusing this material
+
+.center[
+.cc-by-logo[![CC-BY-NC-SA logo](./img/cc_licence.png)]
+]
+.slide-reuse[
+This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+.center[
+https://creativecommons.org/licenses/by-nc-sa/4.0/ 
+]
+This means you are free to copy and redistribute the material and adapt and build on the material under the following terms: You must give appropriate credit, provide a link to the license and indicate if changes were made. If you adapt or build on the material you must distribute your work under the same license as the original.
+
+Acknowledge EPCC as follows: "Copyright &copy; EPCC, The University of Edinburgh"
+
+Note that this presentation contains images owned by others. Please seek their permission before reusing these images.
+]
+
+---
+
+## Slide
+
+Blah
+
+* Blah, *blah*, **blah**, `blah`!
+* Blah
+
+.center[
+Centred blah
+]
+
+.columns[
+.col[
+Left column blah
+]
+.col[
+Right column blah
+]
+]
+
+```
+$ run blah
+```
+
+$$ \frac{dy}{dx} = x - y $$
+
+???
+
+Here we have some basic Markdown formatting plus centring, two columns, a code snippet and an equation courtesy of mathjax.
+
+---
+
+## References and acknowledgements
+
+.slide-references[
+Presentation built using [remark](http://gnab.github.com/remark) (Apache License 2.0) and [MathJax](https://www.mathjax.org/) (MIT License).
+]
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
