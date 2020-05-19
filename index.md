@@ -2,6 +2,8 @@
 
 epcc_clarity.thmx-style HTML presentation built using [remark](http://gnab.github.com/remark) and [MathJax](https://www.mathjax.org/).
 
+See [EpccClarityRemark.html](./EpccClarityRemark.html) for an example.
+
 To toggle full-screen:
 
 * Press "F" when viewing within a browser.
