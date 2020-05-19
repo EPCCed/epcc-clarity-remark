@@ -8,6 +8,9 @@ p, li, th, td {
   font-size: 20pt;
   line-height: 1.2;
 }
+li { 
+  font-size: 18pt;
+}
 h1, h2, h3 {
   font-family: "Arial";
   font-weight: normal;
