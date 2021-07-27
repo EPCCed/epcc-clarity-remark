@@ -1,7 +1,7 @@
 /* Styles match epcc_clarity.thmx where possible. */
 body { 
   font-family: "Arial";
-  color: #292934;
+  color: #000000;
 }
 p, li, th, td { 
   font-family: "Arial";
@@ -11,10 +11,17 @@ p, li, th, td {
 li { 
   font-size: 18pt;
 }
+/* 
+ * Set bullet colours. From:
+ * https://www.designcise.com/web/tutorial/how-to-set-html-lists-bullet-color-using-css
+ */
+li::marker {
+  color: #F0B323; /* EPCC orange */
+}
 h1, h2, h3 {
   font-family: "Arial";
   font-weight: normal;
-  color: #A53926;
+  color: #000000;
 }
 .remark-code {
   font-family: 'Courier';
@@ -62,25 +69,41 @@ th, td {
  * From Easy way to add footer / disable slide numbering #34
  * https://github.com/yihui/xaringan/issues/34
  */
-.footer {
+.header {
   position: fixed;
-  top: 85%;
+  top: 0%;
   left: 0;
   width: 100%;
+  height: 28pt; /* 1.02cm */
+  background: #F0B323; /* EPCC orange */
+  font-size: 12pt;
+  text-align: center;
 }
-.logo_columns {
+.footer {
+  position: fixed;
+  top: 80%;
+  left: 0;
+  width: 100%;
+  background: cyan;
+}
+.logo-columns {
   display: flex;
   align-items: center;
 }
+.epcc-title-logo img {
+  height: 72pt; /* 2.54.cm */
+  float: right;
+  vertical-align: bottom;
+}
 .epcc-logo img {
-  height: 40pt;
-  float: left;
+  height: 30pt; /* 1.07.cm */
+  float: right;
   vertical-align: bottom;
 }
 .uoe-logo img {
-  height: 50pt;
+  height: 154pt; /* 5.41cm */
   float: right;
-  vertical-align: bottom;
+  vertical-align: top;
 }
 .cc-by-logo img {
   height: 75pt;
@@ -93,18 +116,24 @@ th, td {
 .title-slide .remark-slide-number {
   display: none;
 }
-.title-slide h1
-{
+.remark-slide-number {
+  top: 0%;
+  height: 28pt; /* 1.02cm */
+  background: green;
+  font-size: 12pt;
+  text-align: left;
+}
+.title-slide h1 {
   font-size: 54pt;
 }
-.title-slide hr
-{
-  border-color: #D2533C;
+.title-slide hr {
+  border-color: #000000;
+  background-color: #000000;
+  height: 1.5pt;
 }
-.title-slide p
-{
-  font-size: 24pt;
-  color: #57576E;
+.title-slide p {
+  font-size: 28pt;
+  color: #000000;
 }
 .slide-reuse p {
   font-size: 15pt;
