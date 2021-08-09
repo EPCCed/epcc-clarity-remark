@@ -1,4 +1,26 @@
-/* Styles match EPCC styles where possible. */
+/* remark.js stylesheet consistent with EPCC presentation slide style */
+
+/*
+ * Render nicely on Export to PDF within browser,
+ * https://github.com/gnab/remark/issues/50#issuecomment-327391929
+ */ 
+@page {
+  size: 1024px 768px;
+  margin: 0;
+}
+@media print {
+  .remark-slide-scaler {
+    width: 100% !important;
+    height: 100% !important;
+    transform: scale(1) !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+}
+
+/*
+ * Style HTML elements.
+ */
 body { 
   font-family: "Arial";
   color: #000000;
@@ -8,21 +30,32 @@ p, li, th, td {
   font-size: 20pt;
   line-height: 1.2;
 }
-li { 
-  font-size: 18pt;
-}
-/* 
- * Set bullet colours. From:
- * https://www.designcise.com/web/tutorial/how-to-set-html-lists-bullet-color-using-css
- */
-li::marker {
-  color: #F0B323; /* EPCC orange */
-}
 h1, h2, h3 {
   font-family: "Arial";
   font-weight: normal;
   color: #000000;
 }
+li { 
+  font-size: 18pt;
+}
+/* 
+ * https://www.designcise.com/web/tutorial/how-to-set-html-lists-bullet-color-using-css
+ */
+li::marker {
+  color: #F0B323; /* EPCC orange */
+}
+/* Collapse table cell borders so cells share borders. */
+table {
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  border: 1px solid;
+}
+
+/*
+ * Override remark.js styles.
+ */
 .remark-code {
   font-family: 'Courier';
   font-weight: bold;
@@ -33,16 +66,25 @@ h1, h2, h3 {
   font-weight: bold;
   font-size: 16pt;
 }
-/* Collapse table cell borders so cells share borders. */
-table {
-  border-collapse: collapse;
-}
-th, td {
-  padding: 5px;
-  border: 1px solid;
-}
 /*
- * From Two-column formatting? #236
+ * Center slide numbering,
+ * https://community.rstudio.com/t/center-slide-numbering-in-xaringan/24463/2
+ */
+.remark-slide-number {
+  top: 0%;
+  height: 28pt; /* 1.02cm */
+  background: #F0B323; /* EPCC orange */
+  color: #ffffff;
+  font-size: 12pt;
+  text-align: right;
+  opacity: 1;
+}
+
+/*
+ * Additional styles.
+ */
+/*
+ * Two-column formatting,
  * https://github.com/gnab/remark/issues/236 
  */
 .columns {
@@ -59,13 +101,13 @@ th, td {
   box-sizing: border-box;
 }
 /*
- * From Easy way to add footer / disable slide numbering #34
+ * Easy way to add footer / disable slide numbering,
  * https://github.com/yihui/xaringan/issues/34
  */
 .header {
   position: fixed;
+  left: 0%;
   top: 0%;
-  left: 0;
   width: 100%;
   height: 28pt; /* 1.02cm */
   background: #F0B323; /* EPCC orange */
@@ -75,14 +117,9 @@ th, td {
 }
 .footer {
   position: fixed;
-  top: 80%;
-  left: 0;
+  left: 0%;
+  bottom: 0%;
   width: 100%;
-  background: cyan;
-}
-.logo-columns {
-  display: flex;
-  align-items: center;
 }
 .epcc-title-logo img {
   height: 72pt; /* 2.54.cm */
@@ -104,28 +141,14 @@ th, td {
   float: center;
 }
 /*
- * From Slide number removal
+ * Slide number removal,
  * https://github.com/yihui/xaringan/wiki/Slide-number-removal
  */
 .title-slide .remark-slide-number {
   display: none;
 }
-/*
- * From Center slide numbering in xaringan
- * https://community.rstudio.com/t/center-slide-numbering-in-xaringan/24463/2
- */
-.remark-slide-number {
-  top: 0%;
-  height: 28pt; /* 1.02cm */
-  background: #F0B323; /* EPCC orange */
-  color: #ffffff;
-  font-size: 12pt;
-  text-align: right;
-  opacity: 1;
-}
-
 .title-slide h1 {
-  font-size: 54pt;
+  font-size: 44pt;
 }
 .title-slide hr {
   border-color: #000000;
