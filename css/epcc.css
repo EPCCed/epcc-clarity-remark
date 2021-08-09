@@ -1,4 +1,4 @@
-/* Styles match epcc_clarity.thmx where possible. */
+/* Styles match EPCC styles where possible. */
 body { 
   font-family: "Arial";
   color: #000000;
@@ -59,13 +59,6 @@ th, td {
   box-sizing: border-box;
 }
 /*
- * From Center slide numbering in xaringan
- * https://community.rstudio.com/t/center-slide-numbering-in-xaringan/24463/2
- */
-.remark-slide-number {
-  right: 50%
-}
-/*
  * From Easy way to add footer / disable slide numbering #34
  * https://github.com/yihui/xaringan/issues/34
  */
@@ -76,8 +69,9 @@ th, td {
   width: 100%;
   height: 28pt; /* 1.02cm */
   background: #F0B323; /* EPCC orange */
+  color: #FFFFFF;
   font-size: 12pt;
-  text-align: center;
+  text-align: left;
 }
 .footer {
   position: fixed;
@@ -101,7 +95,7 @@ th, td {
   vertical-align: bottom;
 }
 .uoe-logo img {
-  height: 154pt; /* 5.41cm */
+  height: 151pt; /* 5.35cm */
   float: right;
   vertical-align: top;
 }
@@ -116,13 +110,20 @@ th, td {
 .title-slide .remark-slide-number {
   display: none;
 }
+/*
+ * From Center slide numbering in xaringan
+ * https://community.rstudio.com/t/center-slide-numbering-in-xaringan/24463/2
+ */
 .remark-slide-number {
   top: 0%;
   height: 28pt; /* 1.02cm */
-  background: green;
+  background: #F0B323; /* EPCC orange */
+  color: #ffffff;
   font-size: 12pt;
-  text-align: left;
+  text-align: right;
+  opacity: 1;
 }
+
 .title-slide h1 {
   font-size: 54pt;
 }
