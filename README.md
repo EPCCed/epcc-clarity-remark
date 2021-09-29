@@ -1,6 +1,6 @@
 # EPCC Remark JavaScript Template
 
-EPCC-styled HTML presentation built using [remark](http://gnab.github.com/remark) and [MathJax](https://www.mathjax.org/).
+EPCC-styled HTML presentation built using [remark](https://remarkjs.com/) and [MathJax](https://www.mathjax.org/).
 
 See [EpccRemark.html](./EpccRemark.html) for an example.
 
