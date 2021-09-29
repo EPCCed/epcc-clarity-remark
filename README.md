@@ -1,6 +1,6 @@
 # EPCC Clarity Remark JavaScript Template
 
-epcc_clarity.thmx-style HTML presentation built using [remark](http://gnab.github.com/remark) and [MathJax](https://www.mathjax.org/).
+epcc_clarity.thmx-style HTML presentation built using [remark](https://remarkjs.com/) ([GitHub](https://github.com/gnab/remark)) and [MathJax](https://www.mathjax.org/).
 
 See [EpccClarityRemark.html](./EpccClarityRemark.html) for an example.
 
